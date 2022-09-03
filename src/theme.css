@@ -1,9 +1,14 @@
 /* Global CSS variables */
 :root {
-  --primary: #757575;
-  --spacing-company: 3rem;
+  --spacing-hero: 2rem;
   --font-weight: 400;
-  --border-radius: 0;
+}
+
+[data-theme=dark] {
+  --primary: #757575;
+  --primary-hover: #607d8b;
+  --primary-focus: rgba(84, 110, 122, 0.25);
+  --primary-inverse: #FFF;
 }
 
 /* Typography */
@@ -26,7 +31,7 @@ small {
 }
 
 header {
-  padding: var(--spacing-company) 0;
+  padding: var(--spacing-hero) 0;
 }
 
 header hgroup > :last-child {
@@ -34,7 +39,7 @@ header hgroup > :last-child {
 }
 
 header hgroup {
-  margin-bottom: var(--spacing-company);
+  margin-bottom: var(--spacing-hero);
 }
 
 /* Nav */
@@ -46,7 +51,7 @@ summary[role="link"].contrast:is([aria-current],:hover,:active,:focus) {
 /* Main */
 @media (min-width: 992px) {
   main .grid {
-    grid-column-gap: var(--spacing-company);
+    grid-column-gap: var(--spacing-hero);
     grid-template-columns: auto 25%;
   }
 }
@@ -61,6 +66,26 @@ aside img {
 }
 
 aside p {
-  margin-bottom: var(--spacing-company);
+  margin-bottom: var(--spacing-hero);
   line-height: 1.25;
+}
+
+/*span inside a => icon*/
+a span {
+  font-family: sans-serif;
+}
+
+.yt-container {
+   position: relative;
+   width: 100%;
+   height: 0;
+   margin: 0;
+   padding-bottom: 56.25%;
+}
+.yt-embed {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
 }
