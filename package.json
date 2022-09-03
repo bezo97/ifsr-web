@@ -1,0 +1,20 @@
+{
+  "name": "ifsr-web",
+  "version": "1.0.0",
+  "description": "IFSRenderer Website",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx @11ty/eleventy --serve",
+    "build": "npx @11ty/eleventy",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bezo97", "ifsrenderer", "website"
+  ],
+  "author": "bezo97",
+  "license": "MIT",
+  "dependencies": {
+    "@11ty/eleventy": "^1.0.0",
+    "html-minifier": "^4.0.0"
+  }
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head prefix="og: http://ogp.me/ns#">
+    <!--Must come first for proper rendering-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IFSRenderer</title>
+    <meta name="description" content="3D IFS fractal renderer and editor">
+    <meta name="author" content="bezo97">
+    <meta name="copyright" content="Copyright {{ build_info.year }} Zoltán Dócs">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="free, software, fractal, art">
+    <!--Useless tags, nice to have-->
+    <meta name="generator" content="eleventy">
+    <meta name="classification" content="Software">
+    <meta name="category" content="software">
+    <meta name="subject" content="fractal, art, software">
+    <meta name="language" content="en-US">
+    <meta name="rating" content="General">
+    <meta name="distribution" content="Global">
+
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+
+    <link rel="stylesheet" type="text/css" href="theme.css">
+
+    <!--ico-->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <!--web app manifest-->
+    <link rel="manifest" href="/manifest.json">
+
+    <!--seo structured data-->
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "SoftwareApplication",
+          "name": "IFSRenderer",
+          "abstract": "3D IFS fractal renderer and editor",
+          "operatingSystem": "Windows",
+          "applicationCategory": "DesignApplication",
+          "offers": {
+            "@type": "Offer",
+            "price": "0"
+          },
+          "downloadUrl": "https://github.com/bezo97/IFSRenderer/releases/latest",
+          "releaseNotes": "https://github.com/bezo97/IFSRenderer/blob/master/CHANGELOG.md",
+          "softwareRequirements": ".NET Runtime",
+          "maintainer": {
+            "@type": "Person",
+            "name": "bezo97"
+          },
+          "screenshot": "@"
+        }
+    </script>
+
+    <!--OpenGraph / Facebook SEO-->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="IFSRenderer">
+    <meta property="og:url" content="@">
+    <meta property="og:image" content="@">
+
+    <!--Twitter Card-->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="IFSRenderer">
+    <meta name="twitter:description" content="3D IFS fractal renderer and editor">
+    <meta name="twitter:image" content="@">
+
+</head>
+
+<body>
+
+    <!-- Hero -->
+    <div class="hero" data-theme="dark">
+        <nav class="container-fluid">
+            <ul>
+                <li><a href="./" class="contrast" onclick="event.preventDefault()"><strong>IFSRenderer</strong></a></li>
+            </ul>
+            <ul>
+                <li><a href="./">Download</a></li>
+                <li><a href="./">Gallery</a></li>
+                <li>
+                    <details role="list" dir="rtl">
+                        <summary aria-haspopup="listbox" role="link" class="contrast">Tutorials</summary>
+                        <ul role="listbox">
+                            <li><a href="../preview/">Preview</a></li>
+                            <li><a href="../preview-rtl/">Right-to-left</a></li>
+                            <li><a href="../classless/">Class-less</a></li>
+                            <li><a href="../basic-template/">Basic template</a></li>
+                            <li><a href="../company/">Company</a></li>
+                            <li><a href="../google-amp/">Google Amp</a></li>
+                            <li><a href="../sign-in/">Sign in</a></li>
+                            <li><a href="../bootstrap-grid/">Bootstrap grid</a></li>
+                        </ul>
+                    </details>
+                </li>
+            </ul>
+        </nav>
+        <header class="container">
+            <hgroup>
+                <h1>IFSRenderer</h1>
+                <h2>3D IFS fractal renderer and editor</h2>
+            </hgroup>
+            <p><a href="#" role="button">@ Download</a></p>
+        </header>
+    </div>
+
+    <!-- Main -->
+    <main class="container">
+        <div class="grid">
+
+            <section>
+                asd
+            </section>
+
+            <aside>
+                <h3>Features</h3>
+                <a href="#" aria-label="Example" onclick="event.preventDefault()"><img
+                        src="https://source.unsplash.com/T5nXYXCf50I/1500x750" alt="Screenshot"></a>
+                <p>
+                    <a href="#" onclick="event.preventDefault()">Render 3D fractals</a><br>
+                    <small>Based on the flame algorithm.</small>
+                </p>
+                <a href="#" aria-label="Example" onclick="event.preventDefault()"><img
+                        src="https://source.unsplash.com/tb4heMa-ZRo/1500x750" alt="Screenshot"></a>
+                <p>
+                    <a href="#" onclick="event.preventDefault()">Real-time interaction</a><br>
+                    <small>Immediately see changes you make.</small>
+                </p>
+                <a href="#" aria-label="Example" onclick="event.preventDefault()"><img
+                        src="https://source.unsplash.com/Ru3Ap8TNcsk/1500x750" alt="Screenshot"></a>
+                <p>
+                    <a href="#" onclick="event.preventDefault()">Node-based editor</a><br>
+                    <small>Visual representation of the fractal structure.</small>
+                </p>
+            </aside>
+
+        </div>
+    </main><!-- ./ Main -->
+
+    <!-- Subscribe -->
+    <section aria-label="Subscribe example">
+        <div class="container">
+            <article>
+                {{ collections.introduction[0].templateContent }}
+            </article>
+        </div>
+    </section><!-- ./ Subscribe -->
+
+    <!-- Footer -->
+    <footer class="container">
+        <small>Built with <a href="https://picocss.com">Pico</a> • <a
+                href="https://github.com/picocss/examples/tree/master/company/">Source code</a></small>
+    </footer><!-- ./ Footer -->
+
+    <!-- Minimal theme switcher -->
+    <script src="../js/minimal-theme-switcher.js"></script>
+
+</body>
+
+</html>
