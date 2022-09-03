@@ -27,6 +27,8 @@
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <!--web app manifest-->
     <link rel="manifest" href="/manifest.json">
+    <!--android-chrome tab color-->
+    <meta name="theme-color" content="#1e88e5">
 
     <!--seo structured data-->
     <script type="application/ld+json">
@@ -55,14 +57,14 @@
     <!--OpenGraph / Facebook SEO-->
     <meta property="og:type" content="website">
     <meta property="og:title" content="IFSRenderer">
-    <meta property="og:url" content="@">
-    <meta property="og:image" content="@">
+    <meta property="og:url" content="/media/background.jpg">
+    <meta property="og:image" content="/media/background.jpg">
 
     <!--Twitter Card-->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="IFSRenderer">
     <meta name="twitter:description" content="3D IFS fractal renderer and editor">
-    <meta name="twitter:image" content="@">
+    <meta name="twitter:image" content="/media/background.jpg">
 
 </head>
 
@@ -72,21 +74,32 @@
     <div class="hero" data-theme="dark">
         <nav class="container-fluid">
             <ul>
-                <li><a href="./" class="contrast" onclick="event.preventDefault()"><strong>IFSRenderer</strong></a></li>
+                <li><a href="#" class="contrast" onclick="event.preventDefault()"><img src="media/logo.png"
+                            width="50"></a></li>
             </ul>
             <ul>
+                <li><a href="https://github.com/bezo97/IFSRenderer" target="_blank" class="contrast">🚀 Source</a></li>
                 <li>
                     <details role="list" dir="rtl">
                         <summary aria-haspopup="listbox" role="link" class="contrast">🎓 Tutorials</summary>
                         <ul role="listbox">
-                            <li><hr><small>Beginner</small></li>
-                            <li><a href="https://github.com/bezo97/IFSRenderer/wiki/Getting-Started-Guide" target="_blank">Getting Started Guide</a></li>
-                            <li><a href="https://github.com/bezo97/IFSRenderer/wiki/Beginner:-Sierpinski-Tetrahedron" target="_blank">Sierpinski Tetrahedron</a></li>
-                            <li><hr><small>Advanced</small></li>
-                            <li><a href="https://github.com/bezo97/IFSRenderer/wiki/Starfield-with-Nebula" target="_blank">Starfield with nebula</a></li>
-                            <li><a href="https://github.com/bezo97/IFSRenderer/wiki/Starfields-and-Nebulae---Part-2" target="_blank">Starfield with nebula (part 2)</a></li>
-                            <li><hr><small>For developers</small></li>
-                            <li><a href="https://github.com/bezo97/IFSRenderer/wiki/Plugin-Development" target="_blank">Plugin development</a></li>
+                            <li><small>Beginner</small></li>
+                            <li><a href="https://github.com/bezo97/IFSRenderer/wiki/Getting-Started-Guide"
+                                    target="_blank">Getting Started Guide</a></li>
+                            <li><a href="https://github.com/bezo97/IFSRenderer/wiki/Beginner:-Sierpinski-Tetrahedron"
+                                    target="_blank">Sierpinski Tetrahedron</a></li>
+                            <li>
+                                <hr><small>Advanced</small>
+                            </li>
+                            <li><a href="https://github.com/bezo97/IFSRenderer/wiki/Starfield-with-Nebula"
+                                    target="_blank">Starfield with nebula</a></li>
+                            <li><a href="https://github.com/bezo97/IFSRenderer/wiki/Starfields-and-Nebulae---Part-2"
+                                    target="_blank">Starfield with nebula (part 2)</a></li>
+                            <li>
+                                <hr><small>For developers</small>
+                            </li>
+                            <li><a href="https://github.com/bezo97/IFSRenderer/wiki/Plugin-Development"
+                                    target="_blank">Plugin development</a></li>
                         </ul>
                     </details>
                 </li>
@@ -95,10 +108,13 @@
                         <summary aria-haspopup="listbox" role="link" class="contrast">❔ Support</summary>
                         <ul role="listbox">
                             <li><a href="https://github.com/bezo97/IFSRenderer/wiki" target="_blank">Wiki</a></li>
-                            <li><a href="https://github.com/bezo97/IFSRenderer/discussions" target="_blank">Forum</a></li>
-                            <hr/>
-                            <li><a href="https://github.com/bezo97/IFSRenderer/issues/new?assignees=&labels=&template=feature_request.md" target="_blank">Request a feature</a></li>
-                            <li><a href="https://github.com/bezo97/IFSRenderer/issues/new?assignees=&labels=&template=bug_report.md" target="_blank">File a bug</a></li>
+                            <li><a href="https://github.com/bezo97/IFSRenderer/discussions" target="_blank">Forum</a>
+                            </li>
+                            <hr />
+                            <li><a href="https://github.com/bezo97/IFSRenderer/issues/new?assignees=&labels=&template=feature_request.md"
+                                    target="_blank">Request a feature</a></li>
+                            <li><a href="https://github.com/bezo97/IFSRenderer/issues/new?assignees=&labels=&template=bug_report.md"
+                                    target="_blank">File a bug</a></li>
                         </ul>
                     </details>
                 </li>
@@ -110,7 +126,8 @@
                 <h2>3D IFS fractal renderer and editor</h2>
             </hgroup>
             <p>
-                <a href="https://github.com/bezo97/IFSRenderer/releases/latest" target="_blank" role="button"><span>📥&#xFE0E;</span> Download</a>
+                <a href="https://github.com/bezo97/IFSRenderer/releases/latest" target="_blank"
+                    role="button"><span>📥&#xFE0E;</span> Download</a>
                 <img src="https://img.shields.io/github/v/release/bezo97/IFSRenderer?include_prereleases&sort=semver">
                 <img src="https://img.shields.io/github/license/bezo97/IFSRenderer">
             </p>
@@ -123,10 +140,10 @@
         <section>
             <h2>Demo</h2>
             <div class="yt-container">
-                <iframe class="yt-embed"
-                    src="https://www.youtube-nocookie.com/embed/d_6zVU-wWII" 
-                    title="YouTube video player" frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                <iframe class="yt-embed" src="https://www.youtube-nocookie.com/embed/d_6zVU-wWII"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
                 </iframe>
             </div>
         </section>
@@ -143,39 +160,34 @@
 
             <aside>
                 <h3>Gallery</h3>
-                <a href="https://www.deviantart.com/search/deviations?q=IFSRenderer&order=most-recent" target="_blank"><img
-                        src="https://source.unsplash.com/T5nXYXCf50I/1500x750" alt="Gallery"></a>
+                <a href="https://www.deviantart.com/search/deviations?q=IFSRenderer&order=most-recent" target="_blank">
+                    <img src="media/thumbs/artworks.jpg" alt="Gallery"></a>
                 <p>
                     <a href="https://www.deviantart.com/search/deviations?q=IFSRenderer&order=most-recent" target="_blank">Artworks</a><br>
                     <small>Using the #IFSRenderer hashtag</small>
                 </p>
                 <h3>Features</h3>
-                <a href="#" aria-label="Example" onclick="event.preventDefault()"><img
-                        src="https://source.unsplash.com/T5nXYXCf50I/1500x750" alt="Screenshot"></a>
+                <a href="#" onclick="event.preventDefault()"><img src="media/thumbs/3d.jpg" alt="Screenshot"></a>
                 <p>
                     <a href="#" onclick="event.preventDefault()">Render 3D fractals</a><br>
-                    <small>Based on the flame algorithm.</small>
+                    <small>GPU-powered renderer based on the flame algorithm.</small>
                 </p>
-                <a href="#" aria-label="Example" onclick="event.preventDefault()"><img
-                        src="https://source.unsplash.com/tb4heMa-ZRo/1500x750" alt="Screenshot"></a>
+                <a href="#" onclick="event.preventDefault()"><img src="media/thumbs/rt.jpg" alt="Screenshot"></a>
                 <p>
                     <a href="#" onclick="event.preventDefault()">Real-time interaction</a><br>
                     <small>Immediately see changes you make.</small>
                 </p>
-                <a href="#" aria-label="Example" onclick="event.preventDefault()"><img
-                        src="https://source.unsplash.com/Ru3Ap8TNcsk/1500x750" alt="Screenshot"></a>
+                <a href="#" onclick="event.preventDefault()"><img src="media/thumbs/nodes.jpg" alt="Screenshot"></a>
                 <p>
                     <a href="#" onclick="event.preventDefault()">Node-based editor</a><br>
                     <small>Visual representation of the fractal structure.</small>
                 </p>
-                <a href="#" aria-label="Example" onclick="event.preventDefault()"><img
-                        src="https://source.unsplash.com/Ru3Ap8TNcsk/1500x750" alt="Screenshot"></a>
+                <a href="#" onclick="event.preventDefault()"><img src="media/thumbs/generator.jpg" alt="Screenshot"></a>
                 <p>
                     <a href="#" onclick="event.preventDefault()">Mutation-style generator</a><br>
                     <small>Start from scratch or random parameters.</small>
                 </p>
-                <a href="#" aria-label="Example" onclick="event.preventDefault()"><img
-                        src="https://source.unsplash.com/Ru3Ap8TNcsk/1500x750" alt="Screenshot"></a>
+                <a href="#" onclick="event.preventDefault()"><img src="media/thumbs/plugins.jpg" alt="Screenshot"></a>
                 <p>
                     <a href="#" onclick="event.preventDefault()">Extendable with Plug-Ins</a><br>
                     <small>Code your own formulas.</small>
@@ -187,7 +199,8 @@
 
     <!-- Footer -->
     <footer class="container">
-        <small>IFSRenderer website - <a href="https://github.com/bezo97/ifsr-web">Source code</a> (MIT) - Copyright © {{ build_info.year }} Zoltán Dócs</small>
+        <small>IFSRenderer website - <a href="https://github.com/bezo97/ifsr-web">Source code</a> (MIT) - Copyright © {{
+            build_info.year }} Dócs Zoltán</small>
     </footer>
 
 </body>

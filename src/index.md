@@ -4,7 +4,7 @@ layout: home
 
 ## 📀 Installation
 
-### Minimum Requirements
+### 📊 Minimum Requirements
 - Windows 10
 - .NET Desktop Runtime 6 (installed on demand)
 - OpenGL 4.5 capable graphics card
@@ -18,7 +18,7 @@ Previous versions can be found on the [Releases](https://github.com/bezo97/IFSRe
 Beginners should start with the *[Getting Started Guide](https://github.com/bezo97/IFSRenderer/wiki/Getting-Started-Guide)*.  
 See the [Wiki](https://github.com/bezo97/IFSRenderer/wiki) for more.
 
-## Planned features:
+## 📝 Planned features:
 - Animations
 - More intuitive coloring methods
 - Crossplatform CLI (Command-line interface)
@@ -45,5 +45,5 @@ The library is published as a [NuGet package](https://www.nuget.org/packages/IFS
 ---
 
 ## ⚖️ License
-Copyright © {{ build_info.year }} Dócs Zoltán & contributors  
+Copyright © {{ build_info.year }} [Dócs Zoltán](https://github.com/bezo97) & contributors  
 IFSRenderer is a free software licensed under [**GPLv3**](https://github.com/bezo97/IFSRenderer/blob/master/LICENSE).

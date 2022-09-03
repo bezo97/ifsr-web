@@ -5,9 +5,9 @@
 }
 
 [data-theme=dark] {
-  --primary: #757575;
-  --primary-hover: #607d8b;
-  --primary-focus: rgba(84, 110, 122, 0.25);
+  --primary: #1e88e5;
+  --primary-hover: #52c4f1;
+  --primary-focus: #533ca5;
   --primary-inverse: #FFF;
 }
 
@@ -25,13 +25,14 @@ small {
 /* Header */
 .hero {
   background-color: #394046;
-  background-image: url("https://source.unsplash.com/DNQ-M93tHmA/3000x1000");
+  background-image: url("media/background.jpg");
   background-position: center;
   background-size: cover;
 }
 
 header {
   padding: var(--spacing-hero) 0;
+  text-shadow: 0 0 1rem black;
 }
 
 header hgroup > :last-child {
