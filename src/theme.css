@@ -96,3 +96,14 @@ a span {
 aside img {
   width: 100%;
 }
+
+body footer.container {
+  background-image: url("media/footer_graphics.svg");
+  background-position-y: bottom;    
+  max-width: 100%;
+  background-size: 100%;
+  padding-top: 15em;
+  margin-bottom: -15em;
+
+  text-align: center;
+}
