@@ -9,6 +9,8 @@
   --primary-hover: #52c4f1;
   --primary-focus: #533ca5;
   --primary-inverse: #FFF;
+  --muted-color: hsl(205deg, 10%, 60%);
+  --dropdown-background-color: hsl(205deg, 30%, 10%);
 }
 
 /* Typography */

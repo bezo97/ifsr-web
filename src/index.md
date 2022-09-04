@@ -10,7 +10,7 @@ layout: home
 - OpenGL 4.5 capable graphics card
 
 ### 📥 Downloads
-Get the latest installer or portable version **[HERE](https://github.com/bezo97/IFSRenderer/releases/latest)**.  
+Get the latest installer or portable version: **[Download here](https://github.com/bezo97/IFSRenderer/releases/latest)**.  
 Previous versions can be found on the [Releases](https://github.com/bezo97/IFSRenderer/releases) tab.
 
 ## 🕹️ Usage
