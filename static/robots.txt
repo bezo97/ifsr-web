@@ -1,2 +1,7 @@
 # only for robots pls :)
-# Sitemap: http://example.com/sitemap.xml
+
+User-agent: *
+Allow: /
+Disallow: /media/thumbs/
+
+# Sitemap: https://example.com/sitemap.xml
