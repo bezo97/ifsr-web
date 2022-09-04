@@ -6,10 +6,6 @@ module.exports = function (eleventyConfig) {
   //avoid common pitfall
   eleventyConfig.setLibrary("md", markdownIt({ html: true }).disable("code"));
 
-  eleventyConfig.addPassthroughCopy({"./src/content/media": "content/media"});
-  eleventyConfig.addWatchTarget("./src/content/media");
-
-
   eleventyConfig.addPassthroughCopy("./src/theme.css");
   eleventyConfig.addWatchTarget("./src/theme.css");
 
