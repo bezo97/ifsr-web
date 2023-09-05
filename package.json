@@ -8,12 +8,14 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "bezo97", "ifsrenderer", "website"
+    "bezo97",
+    "ifsrenderer",
+    "website"
   ],
   "author": "bezo97",
   "license": "MIT",
   "dependencies": {
-    "@11ty/eleventy": "^1.0.0",
+    "@11ty/eleventy": "^2.0.1",
     "html-minifier": "^4.0.0"
   }
 }
