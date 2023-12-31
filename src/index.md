@@ -5,8 +5,7 @@ layout: home
 ## 📀 Installation
 
 ### 📊 Minimum Requirements
-- Windows 10
-- .NET Desktop Runtime 6 (installed on demand)
+- Windows 10 or later
 - OpenGL 4.5 capable graphics card
 
 ### 📥 Downloads
@@ -19,10 +18,9 @@ Beginners should start with the *[Getting Started Guide](https://github.com/bezo
 See the [Wiki](https://github.com/bezo97/IFSRenderer/wiki) for more.
 
 ## 📝 Planned features:
-- Animations
+- Gradient editor
+- Animation curve editor
 - More intuitive coloring methods
-- Crossplatform CLI (Command-line interface)
-- A better name & logo
 - [*Add Your Ideas*](https://github.com/bezo97/IFSRenderer/discussions/categories/ideas)
 
 ## ❔ Support
