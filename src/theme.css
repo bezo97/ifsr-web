@@ -1,16 +1,15 @@
-/* Global CSS variables */
-:root {
-  --spacing-hero: 2rem;
-  --font-weight: 400;
-}
+/*dark theme only*/
+[data-theme="dark"] {
+  --pico-font-weight: 400;
+  --pico-primary-background: #1e88e5;
+  --pico-primary-hover: #52c4f1;
+  --pico-primary-focus: #533ca5;
+  --pico-primary-inverse: #fff;
+  --pico-muted-color: hsl(205deg, 10%, 60%);
+  --pico-dropdown-background-color: hsl(205deg, 30%, 10%);
 
-[data-theme=dark] {
-  --primary: #1e88e5;
-  --primary-hover: #52c4f1;
-  --primary-focus: #533ca5;
-  --primary-inverse: #FFF;
-  --muted-color: hsl(205deg, 10%, 60%);
-  --dropdown-background-color: hsl(205deg, 30%, 10%);
+  --spacing-hero: 2rem;
+  background-color: #13171f;
 }
 
 /* Typography */
@@ -21,7 +20,11 @@ hgroup > :last-child {
 }
 
 small {
-  color: var(--muted-color);
+  color: var(--pico-muted-color);
+}
+
+a {
+  text-decoration: none;
 }
 
 /* Header */
@@ -37,18 +40,19 @@ header {
   text-shadow: 0 0 1rem black;
 }
 
-header hgroup > :last-child {
-  color: var(--h3-color);
-}
-
 header hgroup {
   margin-bottom: var(--spacing-hero);
 }
 
 /* Nav */
-summary[role="link"].contrast:is([aria-current],:hover,:active,:focus) {
-  background-color: transparent;
-  color: var(--contrast-hover);
+nav details.dropdown summary.transparent {
+  &,
+  &:hover,
+  &:focus {
+    background-color: transparent;
+    border-width: 0;
+    color: var(--contrast-hover);
+  }
 }
 
 /* Main */
@@ -57,10 +61,6 @@ summary[role="link"].contrast:is([aria-current],:hover,:active,:focus) {
     grid-column-gap: var(--spacing-hero);
     grid-template-columns: auto 25%;
   }
-}
-
-form.grid {
-  grid-row-gap: 0;
 }
 
 /* Aside nav */
@@ -79,18 +79,18 @@ a span {
 }
 
 .yt-container {
-   position: relative;
-   width: 100%;
-   height: 0;
-   margin: 0;
-   padding-bottom: 56.25%;
+  position: relative;
+  width: 100%;
+  height: 0;
+  margin: 0;
+  padding-bottom: 56.25%;
 }
 .yt-embed {
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 aside img {
@@ -99,11 +99,16 @@ aside img {
 
 body footer.container {
   background-image: url("media/footer_graphics.svg");
-  background-position-y: bottom;    
+  background-position-y: bottom;
   max-width: 100%;
   background-size: 100%;
   padding-top: 15em;
   margin-bottom: -15em;
 
   text-align: center;
+}
+
+/*fix some odd bug in picocss that causes horizontal overflow scrolling on page*/
+nav ul:last-of-type {
+  margin-right: 0;
 }
