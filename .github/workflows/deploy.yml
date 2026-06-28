@@ -26,21 +26,15 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v7
+      - uses: actions/checkout@v7
+      - uses: actions/configure-pages@v6
+      - uses: actions/setup-node@v6
         with:
-          submodules: "recursive"
-      - name: Setup Pages
-        uses: actions/configure-pages@v6
-      - name: Build 11ty
-        uses: TartanLlama/actions-eleventy@master
+          node-version: 24
+      - run: npm ci
+      - run: npm run build
+      - uses: actions/upload-pages-artifact@v5
         with:
-          args: --output _dist
-          install_dependencies: true
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v5
-        with:
-          path: "_dist" # Upload 11ty build output
-      - name: Deploy to GitHub Pages
+          path: build/
+      - uses: actions/deploy-pages@v5
         id: deployment
-        uses: actions/deploy-pages@v5
