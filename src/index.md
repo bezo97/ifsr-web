@@ -27,6 +27,7 @@ See the [Wiki](https://github.com/bezo97/IFSRenderer/wiki) for more.
 - Mutation-style generator
 - Extendable with Plug-Ins
 - Animations
+- Post-processing effects
 - Fisheye projection, ideal for planetarium dome masters
 
 ## 📝 Planned features:
