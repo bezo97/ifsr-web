@@ -1,7 +1,7 @@
-const markdownIt = require("markdown-it");
-const htmlmin = require("html-minifier");
+import markdownIt from "markdown-it";
+import htmlmin from "html-minifier";
 
-module.exports = function (eleventyConfig) {
+export default function (eleventyConfig) {
   //avoid common pitfall
   eleventyConfig.setLibrary("md", markdownIt({ html: true }).disable("code"));
 
@@ -32,4 +32,4 @@ module.exports = function (eleventyConfig) {
       output: "build",
     },
   };
-};
+}
