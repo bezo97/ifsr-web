@@ -1,9 +1,23 @@
 import markdownIt from "markdown-it";
 import htmlmin from "html-minifier";
+import mdIterator from "markdown-it-for-inline";
 
 export default function (eleventyConfig) {
-  //avoid common pitfall
-  eleventyConfig.setLibrary("md", markdownIt({ html: true }).disable("code"));
+  eleventyConfig.setLibrary(
+    "md",
+    markdownIt({ html: true })
+      //avoid common pitfall
+      .disable("code")
+      // Open external links in new tab
+      // https://v2.franknoirot.co/posts/external-links-markdown-plugin/
+      .use(mdIterator, "url_new_win", "link_open", function (tokens, idx) {
+        const [attrName, href] = tokens[idx].attrs.find((attr) => attr[0] === "href");
+        if (href && !href.includes("ifsrenderer.z97.io") && !href.startsWith("/") && !href.startsWith("#")) {
+          tokens[idx].attrPush(["target", "_blank"]);
+          tokens[idx].attrPush(["rel", "noopener noreferrer"]);
+        }
+      }),
+  );
 
   eleventyConfig.addPassthroughCopy("./src/theme.css");
   eleventyConfig.addWatchTarget("./src/theme.css");
